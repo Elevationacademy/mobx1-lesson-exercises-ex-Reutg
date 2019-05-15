@@ -9,8 +9,12 @@ import { ShoppingList } from '../src/stores/ShoppingList'
 
 
 let potatoes = new Item("Potatoes")
+let corn = new Item("corn")
+let sombreros = new Item("sombreros")
+
 let groceryList = new ShoppingList()
 groceryList.list.push(potatoes)
+groceryList.list.push(corn, sombreros )
 
 // Use the prop "store" for your store
 ReactDOM.render(<App store={groceryList} />, document.getElementById('root'));
